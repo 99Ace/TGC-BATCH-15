@@ -1,0 +1,44 @@
+.parent {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    position: relative;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    
+    
+}
+/* relative keep original position */
+/* relative takes ref from original position */
+/* top down left or right , it ref from it's original pos*/
+.red {
+    background: red;
+    position: relative;
+    left: 100px;
+    /* top: 100px; */
+    
+}
+/* absolute gives up original position */
+/* if parent is not set to relative, it will take reference from the main screen */
+/* top down left right, ref from parent */
+.yellow {
+    background: yellow;
+    position: absolute;
+    left: 100px;
+}
+.blue {
+    background: blue;
+    position: relative;
+    right: 50px;
+    bottom: 50px;
+}
+.green {
+    background: green;
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+}

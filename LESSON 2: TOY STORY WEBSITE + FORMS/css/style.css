@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+}
+/* NAVBAR */
+#navbar {
+    /* border: 1px solid black; */
+    background-color: black;
+}
+#navbar-brand {
+    color: white;
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+/* any img exists in #navbar */
+#navbar img {
+    height: 50px;
+}
+#navbar>ul {
+    /* border: 1px solid blue; */
+    margin : 0;
+    padding: 0;
+    text-align:center;
+    display: inline-block;
+}
+#navbar>ul>li {
+    /* border: 1px solid red; */
+    display: inline-block;
+}
+.navlink {
+    display: block;
+    padding: 20px 40px;
+    /* height: 50px;
+    width: 100px; */
+    text-decoration: none;
+    color: white;
+}
+.navlink:hover {
+    background-color: grey;
+}
+
+
+/* section-hero styling */
+#section-hero {
+    height: 600px;
+    background-image: url('../images/ts4.jpeg');
+    background-size: cover;
+    background-position: 75% 50%;
+    color: white;
+    position: relative;
+}
+/* look for a div that is a direct child of #section-hero*/
+#section-hero>div {
+    /* border: 1px solid red; */
+    width: 60%;
+    padding: 10px;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+}
+
+/* end of section-hero */
+
+/* section-about  */
+.frame-wording {
+    width : 60%;
+    /* border: 1px solid black; */
+    /* margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto; */
+    margin: 40px auto 10px;
+}
+.frame-parent {
+    text-align: center;
+}
+.frame {
+    width: 250px;
+    height: 400px;
+    background-color: burlywood;
+    border: chartreuse solid 1px;
+    display: inline-block;
+}
+.img-woody {
+    background-image: url('../images/woody.png');
+    background-size: cover;
+}
+.img-jessie{
+    background-image: url('../images/jessie.png');
+    background-size: cover;
+}
+.img-buzz{
+    background-image: url('../images/buzz.png');
+    background-size: cover;
+}
+/* end of section-about */
+
+
+
+
+/* common classes */
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    border: 1px solid black;
+    border-radius: 16px;
+    text-decoration:none;
+    color: white;
+}
+.btn-readmore {
+    background-color: gray;
+    border: 1px solid gray;
+}
+
+
+
+
