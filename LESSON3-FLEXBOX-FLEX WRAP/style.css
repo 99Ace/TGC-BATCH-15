@@ -1,0 +1,29 @@
+.parent  {
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 500px;
+    width: 500px;
+    /* settings apply to parents */
+    display: flex;
+
+    flex-wrap: wrap;
+    /* align-content, can only be used with flex-wrap:wrap */
+    align-content: space-around;
+
+}
+.box  {
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+    order : 1;
+}
+.green {
+    background-color: green;
+}

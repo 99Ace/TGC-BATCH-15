@@ -1,0 +1,45 @@
+.parent  {
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 500px;
+    /* width by default is 100% of screen or parent */
+
+    /* settings apply to parent div */
+    display: flex;
+
+}
+.box  {
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100px;
+}
+.red {
+    background-color: red;
+    flex: 2;
+}
+.yellow {
+    background-color: yellow;
+    flex: 4;
+}
+.green {
+    background-color: green;
+    flex: 3;
+}
+/* addition code to add to modify .yellow class */
+.yellow {
+    background-image: url('https://onecms-res.cloudinary.com/image/upload/s--kpYPeyfU--/c_crop%2Ch_785%2Cw_1397%2Cx_36%2Cy_48/f_auto%2Cq_auto/c_fill%2Cg_auto%2Ch_338%2Cw_600/v1/mediacorp/cna/image/2021-10/screenshot_2021-10-04_at_6.38.41_pm.png?itok=b_pGQvE9');
+    background-size: cover;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    color: white;
+}
+.yellow>div {
+    background-color: rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 8px 30px;
+}

@@ -1,0 +1,41 @@
+.parent  {
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 500px;
+    width: 500px;
+    /* settings apply to parents */
+    display: flex;
+
+    /* adjust the items left right (X-axis) */
+    /* flex-start / flex-end / center / space-around */
+    /* space-between / space-evenly */
+    justify-content: space-between;
+
+    /* adjust the items up down (Y-axis) */
+    /* flex-start / flex-end / center */
+    align-items: center;
+
+    /* changing between column and row / column-reverse / row-reverse */
+    flex-direction: row;
+
+}
+.box  {
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 100px;
+    width: 100px;
+}
+.red {
+    background-color: red;
+}
+.yellow {
+    background-color: yellow;
+}
+.green {
+    background-color: green;
+}
+/* if u want to shift only one particular item, try apply this class to one of the child-item in html */
+/* note: doesn't work if you apply flex-wrap in parent */
+.selected {
+    align-self: flex-end;
+}

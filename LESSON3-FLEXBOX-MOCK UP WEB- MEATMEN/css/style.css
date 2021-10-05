@@ -1,0 +1,130 @@
+body {
+    margin:0;
+}
+/* navbar */
+#navbar {
+    display: flex;
+}
+#navbar-brand{
+    /* border: rgb(43, 61, 226) solid 1px; */
+    padding-left: 20px;
+}
+#navbar-brand h1{
+    margin: 10px;
+}
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    padding-right: 20px;
+    margin-left: auto;
+    /* border: blueviolet solid 1px; */
+}
+#navbar ul li {
+    display: inline-block;
+}
+#navbar>ul>li>a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px;
+    /* border: blueviolet solid 1px; */
+}
+/* section hero */
+#section-hero {
+    background-image: url('https://www.helpguide.org/wp-content/uploads/table-with-grains-vegetables-fruit-768.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    color: white;
+}
+/* .overlay to give a darkening effect on the image */
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay>div {
+    /* background-color: deepskyblue; */
+    width: 300px;
+    text-align: center;
+}
+.main-search {
+    /* border: 1px solid black; */
+    display: flex;
+    
+}
+.main-search>div:nth-child(1){
+    /* background-color:darkmagenta; */
+    flex:9;
+}
+.main-search input {
+    height: 88%;
+    width: 98%;
+}
+.main-search>div:nth-child(2){
+    background-color:orangered;
+    color: white;
+    font-size: 1rem; 
+    padding: 10px;
+}
+
+/* Section Editor's pick */
+#section-editor-pick {
+    text-align: center;
+}
+.editor-parent{
+    /* border: 1px solid black;     */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.frame {
+    /* background-color: thistle; */
+    /* border: 1px solid black; */
+    height: 300px;
+    width: 250px;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+}
+.frame-img {
+    /* background-color: blue; */
+    background-image: url('https://themeatmen.sg/wp-content/uploads/2017/07/IMG_4722_small-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 40%;
+}
+.frame-info {
+    /* background-color: burlywood; */
+    flex: 50%;
+    padding: 0 10px;
+}
+.frame-tag {
+    /* background-color: crimson; */
+    padding: 0 10px 10px;
+}
+.frame-tag>a {
+    display: inline-block;
+    text-decoration: none;
+    color: orangered;
+    border: solid 1px orangered;
+    padding: 5px;
+    font-size: small;
+}
+.editor-img2 {
+    background-image: url('https://themeatmen.sg/wp-content/uploads/2017/04/muah-chee-scaled.jpg');
+}
+.editor-img3 {
+    background-image: url('https://i0.wp.com/themeatmen.sg/wp-content/uploads/2017/06/IMG_9412_small.jpg?w=1920&ssl=1');
+}
+/* common css */
+.text-orange {
+    color: rgb(230, 127, 0);
+    
+}
