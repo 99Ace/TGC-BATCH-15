@@ -1,0 +1,68 @@
+.card {
+    border: black 1px solid;
+    width: 700px;
+    height: 400px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.upper {
+    /* background-color: burlywood; */
+    flex: 2; /*as a child*/
+
+    display: flex; /*as a parent to logo and company */
+}
+.logo {
+    /* background-color: cornsilk; */
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo>img {
+    height: 60%;
+}
+.company {
+    /* background-color: darkgray; */
+    flex: 3;
+
+    display: flex;
+    align-items: center;
+}
+
+.lower {
+    /* background-color: cornflowerblue; */
+    flex: 3;
+
+    display: flex;
+}
+.photo {
+    /* background-color:darkorange; */
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    /* border: 1px solid black; */
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+
+    background-image: url('woody.png');
+    background-size: cover;
+}
+.info {
+    /* background-color: darkseagreen; */
+    flex: 3;
+    display: flex;
+    align-items: center;
+}
+.contact {
+    /* background-color: rgb(218, 30, 255); */
+    flex: 3;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

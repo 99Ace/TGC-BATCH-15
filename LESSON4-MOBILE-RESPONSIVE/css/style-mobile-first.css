@@ -1,0 +1,25 @@
+/* MOBILE STYLING START FIRST */
+body {
+    background-color: red;
+}
+
+/* styling for ipad size and above */
+@media screen and (min-width:768px) {
+    body {
+        background-color: green;
+    }
+}
+/* styling for ipad pro size and above */
+@media screen and (min-width:1024px) {
+    body {
+        background-color: blue;
+    }
+}
+
+/* styling for ipad pro size and above */
+@media screen and (min-width:1200px) {
+    body {
+        background-color: pink;
+    }
+}
+

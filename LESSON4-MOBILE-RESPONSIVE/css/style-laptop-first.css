@@ -1,0 +1,23 @@
+/* LAPTOP STYLING START FIRST */
+body {
+    background-color: red;
+}
+
+/* styling for ipad pro size and below */
+@media screen and (max-width:1024px) {
+    body {
+        background-color: blue;
+    }
+}
+/* styling for ipad size and below */
+@media screen and (max-width:768px) {
+    body {
+        background-color: green;
+    }
+}
+/* styling for mobile size and below */
+@media screen and (max-width:420px) {
+    body {
+        background-color: pink;
+    }
+}

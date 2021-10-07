@@ -1,0 +1,167 @@
+/* MOBILE STYLING */
+.headline {
+    background-color: rgb(242, 242, 242);
+    padding: 20px;
+    /* to set as a parent for the tagline to use absolute */
+    position: relative;
+}
+.headline a {
+    background-color: rgb(30, 116, 222);
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.tagline {
+    height: 200px;
+    background-color: rgb(215, 215, 215);
+    display: none;
+
+}
+
+.info {
+    height: 600px;
+    background-color: rgb(227, 101, 5);
+    display: flex;
+    justify-content: center;
+}
+.picture {
+    height: 600px;
+    background-image: url('https://aem.dropbox.com/cms/content/dam/dropbox/warp/en-us/dropbox/Hero_Image_Centered@2x.jpg.transform/1024w/80q/img.jpg');
+    background-size: cover;
+    background-position: 40% center ;
+}
+.box   {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    margin: 50px;
+    background-color: blanchedalmond;
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.main-frame {
+    height: 200px;
+    width: 200px;
+    background-image: url('woody.png');
+    background-size: cover;
+    position: relative;
+}
+.main-frame:hover>div {
+    display: block;
+}
+.main-frame>div {
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    height: 100%;
+    display: none;
+}
+.main-frame h4 {
+    margin: 0;
+}
+
+/* styling for button and repositioning the box */
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(48, 182, 81);
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 12px;
+}
+.btn-adopt {
+    background-color: rgb(227, 101, 5);
+    padding: 8px 15px;
+}
+.offset {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+}
+.offset2 {
+    position: absolute;
+    bottom: -15px;
+    right: 70px;
+}
+
+/* section highlight styling */
+#section-highlight {
+    padding: 20px;
+}
+#section-highlight>h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.highlight-box {
+    width: 250px;
+}
+.highlight-box>h4 {
+    
+    margin: 40px 0;
+}
+.icon {
+    font-size: 2.7rem;
+}
+
+
+/* ipad size */
+@media screen and (min-width:768px) {
+    .maindiv2 {
+        display: flex;
+    }
+    .maindiv2>div{
+        flex: 1;
+        height: 480px;
+    }
+    /* section highlight styling */
+    #section-highlight>h2 {
+        text-align: center;
+    }
+    .highlight-frame {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+/* laptop */
+@media screen and (min-width: 1200px) {
+    main {
+        display: flex;
+    }
+    main>div{
+        flex: 1;
+    }
+    .tagline{
+        display: block;
+
+        /* to shift the tagline to the bottom of the div */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+
+        /* flex to position the text in the middle of box */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tagline div {
+        width: 60%;
+        text-align: center;
+        color: rgb(52, 52, 52);
+    }
+    .maindiv2 {
+        flex-direction: column;
+        height: 600px;
+    }
+    .picture {
+        order: -1;
+        flex: 1;
+    }
+}
