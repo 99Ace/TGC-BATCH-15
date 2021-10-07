@@ -1,0 +1,33 @@
+/* external CSS */
+#green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+
+h1 {
+    background-color: purple !important;
+}
+/* CSS PRIORITY */
+/* USING >>> !important <<< command */
+/* overwrites all */
+
+/* IDs */
+/* #main-section #navlink */
+
+/* Classes */
+/* .parent .box .red */
+
+/* Element name */
+/* h1 h2 p main nav header footer a img */
+
+/* sequence of code, later code overwrites earlier code */
+
+h1 {
+    background-color: red;
+}
+
+#main>h1 {
+    background-color: blue;
+}

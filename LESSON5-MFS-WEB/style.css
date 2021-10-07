@@ -1,0 +1,158 @@
+/* Mobile */
+body {
+    margin: 0;
+}
+/* navbar */
+nav {
+    display: flex;
+    padding: 20px 10px;
+}
+.navbar-brand>img {
+    height: 40px;
+}
+.ms-2{
+    margin-left: 20px;
+}
+.me-auto {
+    margin-right: auto;
+}
+nav>ul, #navbar-register {
+    display: none;
+}
+#navbar-bars {
+    font-size: 2.5rem;
+    margin-right: 20px;
+}
+/* main */
+main {
+    height: 600px;
+    background-image: url('https://dollarsandsense.sg/wp-content/uploads/2018/08/20170918-Visit-to-NTUC-My-First-Skool-001-1024x682.jpg');
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: flex-end;
+}
+.overlay {
+    height: 60%;
+    width: 100%;
+    background:linear-gradient(rgba(0,0,0,0), rgb(237, 157, 8));
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    color: white;
+}
+/* section highlight */
+.frame-holder{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.frame {
+    width: 300px;
+    height: 300px;
+    background-image: url('https://dollarsandsense.sg/wp-content/uploads/2018/08/20170918-Visit-to-NTUC-My-First-Skool-036-1024x682.jpg');
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: flex-end;
+  
+}
+.light-box {
+    height: 48%;
+    width: 100%;
+    background-color: rgba(222, 35, 35, 0.536);
+
+    display: flex;
+    align-items: flex-end;
+}
+.info {
+    height: 65%;
+    width: 100%;
+    background-color: rgb(210, 14, 76);
+    color: white;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.info>div{
+    flex: 1;
+}
+.btn-tag {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 10px;
+    border-radius: 24px;
+}
+/* common classes */
+.text-center {
+    text-align: center;
+}
+.bg-blue {
+    background-color: rgb(69, 97, 186);
+}
+
+/* ipad */
+@media screen and (min-width:768px) {
+    #navbar-register {
+        display: unset;
+    }
+    .btn {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background-color: rgb(230, 137, 23);
+        padding: 10px 35px;
+        border-radius: 24px;
+        margin: 0 20px;
+    }
+
+    .frame-holder {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+    .frame{
+        position: relative;
+        overflow: hidden;
+    }
+    .light-box {
+        height: 60%;
+        position: absolute;
+        bottom: -90px;
+        transition: bottom 1s;
+    }
+    .light-box:hover {
+        bottom: -30px;
+    }
+}
+
+/* laptop */
+@media screen and (min-width:1200px) {
+    #navbar-bars {
+        display: none;
+    }
+    nav>ul {
+        display: unset;
+        margin: 0;
+        padding: 0;
+    }
+    nav>ul>li {
+        display: inline-block;
+    }
+    nav>ul>li>a {
+        display: block;
+        text-decoration: none;
+        color: grey;
+        padding: 10px 8px;
+        letter-spacing: 0.5px;
+    }
+}

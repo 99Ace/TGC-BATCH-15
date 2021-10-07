@@ -1,0 +1,108 @@
+body {
+    padding: 100px;
+}
+/* TRANSFORM AND TRANSITION COMMANDS */
+.square {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: yellow;
+
+    /* transform: 
+    
+    translate(50px, 100px) translateX translateY
+    rotate(45deg) same as rotateZ; 
+    rotateX rotateY 
+    scale(1.6) scaleX scaleY
+    skew(20deg) skewX skewY*/
+
+    /* this is the parameters of matrix */
+    /* matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()) */
+    
+    /* transition:  */
+    /* transition-property: width, background-color;
+    transition-duration: 2s, 4s;
+    transition-delay: 1s; 
+    transition-timing-function: linear */
+
+    transition: width 2s linear 1s;
+
+    /* ALIGN THE WORD IN THE MIDDLE */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.square:hover {
+    width: 400px;
+}
+/* TO SKEW THE WORDS BACK WHEN THE MAIN DIV IS SKEW  */
+.words {
+    /* color: coral; */
+    /* transform: skewY(-30deg) ; */
+}
+.parent {
+    height: 600px;
+    border: solid black 1px;
+}
+.box {
+    height: 200px;
+    width: 200px;
+    border: solid black 1px;
+    background-color: red;
+    box-sizing: border-box;
+
+    position: relative;
+    left: 100px;
+}
+
+/* ANIMATION TO CHANGE COLOR */
+.square2 {
+    border: 1px solid black;
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+
+    animation-name: change-color;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes change-color {
+    /* from {background-color: red;}
+    to   {background-color: purple;} */
+    0% {background-color: red;}
+    25%{background-color: yellow;}
+    50%{background-color: green;}
+    75%{background-color: blue;}
+    100%{background-color: purple;}
+}
+
+/* ANIMATION TO CHANGE IMAGE */
+.square3 {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    height: 200px;
+    width: 200px;
+
+    background-image: url('paw-01.png');
+    background-size: cover;
+
+    animation-name: blink;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes blink {
+    from {
+        background-image: url('paw-01.png');
+        transform: rotateY(40deg);
+    }
+    to   {
+        background-image: url('paw-02.png');
+        transform: rotateY(-40deg);
+    }   
+}
