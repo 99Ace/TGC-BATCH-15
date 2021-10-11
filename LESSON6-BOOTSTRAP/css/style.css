@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Ma+Shan+Zheng&display=swap');
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Ma Shan Zheng', cursive; */
+
+/* mobile */
+.navbar-brand>img {
+    height: 50px;
+}
+.nav-link, .dropdown-item{
+    /* to overwrite the color of bootstrap */
+    /* color: cyan !important; */
+
+    font-family: 'Ma Shan Zheng', cursive !important; 
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.pic {
+    /* needs a height of 300px as it is on it's own @ col-12, without height, the image will not show */
+    height: 300px;
+    background-color: burlywood;
+    background-image: url('http://www.mosburger.com.sg/images/20210118/main.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.info {
+    background-color: cornsilk;
+}
+/* split the bg-images settings and .bg-setting is reusable */
+.bg-section-display-1 {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUIz92V1FVnuwSvC7MBGV7JlzK0B9d4NWt5g&usqp=CAU');
+}
+.bg-setting {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+/* Common CSS classes */
+/* modify and overwrite bootstrap button */
+.btn {
+    border-radius: 24px;
+    padding: 5px 20px;
+}
+/* create own btn bg color */
+.btn-order {
+    background-color: crimson;
+    color: white;  
+}
+.btn-order:hover {
+    background-color: rgb(194, 25, 59);
+    color: white;  
+}
+
+/* ipad */
+@media screen and (min-width:768px) {
+    .pic {
+        /* remove the height limit and allow it to auto shrink and grow with the text in the .info box */
+        height: auto;
+    }
+}
+/* laptop */
+@media screen and (min-width:1200px) {
+    .pic {
+        /* set height to 600px when big screen as text needs lesser height space */
+        height:600px
+    }
+    
+}

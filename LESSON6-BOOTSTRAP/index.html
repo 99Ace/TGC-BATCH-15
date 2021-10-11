@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- LOGO -->
+            <a class="navbar-brand ms-3" href="index.html">
+                <img src="http://www.mosburger.com.sg/images/mos_logo.png" alt="">
+            </a>
+            <!-- display partners logos when ipad and bigger screen -->
+            <div class="d-none d-md-block me-auto">
+                <img src="http://www.mosburger.com.sg/images/foodpanda.png" alt="">
+                <img src="http://www.mosburger.com.sg/images/deliveroo.png" alt="">
+                <img src="http://www.mosburger.com.sg/images/grabfood.png" alt="">
+            </div>
+            <!-- collapse button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <!-- bg-danger to illustrate how i can change the background -->
+                <span class="navbar-toggler-icon bg-danger"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- navlinks -->
+                <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Breakfast</a></li>
+                            <li><a class="dropdown-item" href="#">Lunch</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Outlets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
+                    <li class="d-flex">
+                        <a href="" class="nav-link">Login</a>&nbsp<a href="" class="nav-link">Register</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+    <!-- display partners logos when mobile screen only -->
+    <div class="text-center my-2 d-md-none">
+        <img src="http://www.mosburger.com.sg/images/foodpanda.png" alt="">
+        <img src="http://www.mosburger.com.sg/images/deliveroo.png" alt="">
+        <img src="http://www.mosburger.com.sg/images/grabfood.png" alt="">
+    </div>
+    <!-- end of navbar -->
+    <main>
+        <div class="row">
+
+            <!-- set up col to be  12 col width when mobile
+                                    6 col width when ipad (md)
+                                    8 col width when large device (lg)    -->
+            <div class="col-12 col-md-6 col-lg-8 pic"></div>
+
+            <!-- set up col to be  12 col width when mobile
+                                    6 col width when ipad (md)
+                                    4 col width when large device (lg)    -->
+            <div class="col-12 col-md-6 col-lg-4 info p-5 
+                        d-flex align-items-center">
+                <!-- above class d-flex and align-items command to move the div holding the text         -->
+                <div>
+                    <h1>MOS BURGER</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi, minima blanditiis quas iusto
+                        molestias natus vel recusandae consectetur eveniet, atque dolor aut nesciunt voluptates
+                        temporibus ipsam error. Ducimus, est excepturi?
+                        Your best choice of burgers!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- section display -->
+    <section id="section-display">
+        <!-- mid-section -->
+        <!-- allows different settings for columns in the row for different mobile size -->
+        <div class="row">
+
+            <!-- Settings for mobile and md is same, so not required to set any for md size -->
+            <div class="col-12          col-lg-3 p-0 p-md-3 p-lg-5"></div>
+
+            <!-- image div -->
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+                <img class="img-fluid"
+                    src="https://www.capitaland.com/content/dam/capitaland-media-library/retail/Singapore/Singapore/Lot%20One%20Shoppers%27%20Mall/child-tenants/LO_MOSBurger.jpg.transform/cap-midres/image.jpg"
+                    alt="">
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6 p-5 bg-light">
+                <div>
+                    <h2>MOS BURGER PROMOTIONS</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis nisi pariatur voluptatum
+                        quod esse? Possimus provident impedit officiis veritatis, quasi eaque. Molestias, atque
+                        molestiae? Excepturi dolores aliquam magnam voluptate cupiditate.</p>
+                    <h2>BUY ONE GET 1 FREE</h2>
+                </div>
+            </div>
+
+            <div class="col-12          col-lg-3 p-0 p-md-3 p-lg-0"></div>
+        </div>
+
+        <!-- Menu segment -->
+        <h2 class="mt-5 text-center bg-dark text-light p-5">MENUS</h2>
+
+        <!-- standard setting for all columns in the row for different mobile size -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4
+                    mt-5">
+            <div class="col">
+                <!-- .card from bootstrap, copy and edit to start using -->
+                <div class="card mx-auto my-3" style="width: 18rem;">
+                    <!-- load in the images -->
+                    <img src="https://www.capitaland.com/content/dam/capitaland-media-library/retail/Singapore/Singapore/Lot%20One%20Shoppers%27%20Mall/child-tenants/LO_MOSBurger.jpg.transform/cap-midres/image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <!-- edit the text -->
+                        <h5 class="card-title">Burger Set Meal</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum at
+                            ea fugiat! Aliquam cum eum, voluptatum id iure nostrum praesentium, nam magnam temporibus
+                            assumenda qui laudantium voluptas consectetur nesciunt?</p>
+                        <a href="#" class="btn btn-success">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto my-3" style="width: 18rem;">
+                    <img src="https://www.capitaland.com/content/dam/capitaland-media-library/retail/Singapore/Singapore/Lot%20One%20Shoppers%27%20Mall/child-tenants/LO_MOSBurger.jpg.transform/cap-midres/image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger Set Meal</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum at
+                            ea fugiat! Aliquam cum eum, voluptatum id iure nostrum praesentium, nam magnam temporibus
+                            assumenda qui laudantium voluptas consectetur nesciunt?</p>
+                        <a href="#" class="btn btn-order">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto my-3" style="width: 18rem;">
+                    <img src="https://www.capitaland.com/content/dam/capitaland-media-library/retail/Singapore/Singapore/Lot%20One%20Shoppers%27%20Mall/child-tenants/LO_MOSBurger.jpg.transform/cap-midres/image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger Set Meal</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum at
+                            ea fugiat! Aliquam cum eum, voluptatum id iure nostrum praesentium, nam magnam temporibus
+                            assumenda qui laudantium voluptas consectetur nesciunt?</p>
+                        <a href="#" class="btn btn-success">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto my-3" style="width: 18rem;">
+                    <img src="https://www.capitaland.com/content/dam/capitaland-media-library/retail/Singapore/Singapore/Lot%20One%20Shoppers%27%20Mall/child-tenants/LO_MOSBurger.jpg.transform/cap-midres/image.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Burger Set Meal</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere ipsum at
+                            ea fugiat! Aliquam cum eum, voluptatum id iure nostrum praesentium, nam magnam temporibus
+                            assumenda qui laudantium voluptas consectetur nesciunt?</p>
+                        <a href="#" class="btn btn-success">Add to cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- form section -->
+    <section id="contact-us" class="p-3 p-md-5">
+        <div class="row">
+            <!-- div will show when ipad and above, hides when mobile -->
+            <div class="col 
+                        d-none d-md-block
+                        bg-section-display-1 bg-setting 
+            
+            "></div>
+            <!-- form -->
+            <div class="col-12 col-lg-6">
+                <h3>Register for your account</h3>
+                <form>
+                    <!-- modify to be input for text input field, remember to chang ethe type to "text" -->
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
