@@ -1,0 +1,119 @@
+/* mobile */
+
+/* sticky button */
+.fixed-box {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 84, 41);
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top:30%;
+    right: 0;
+    z-index: 99;
+}
+
+/* navbar */
+nav {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.navbar-toggler {
+    border-radius: 0;
+}
+/* main */
+.logo {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: cyan;
+
+}
+.uni-pic {
+    background-color: burlywood;
+    height: 550px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.frame {
+    height: 300px;
+    color: white;
+}
+.bg-teal {
+    background-color: teal;
+}
+.bg-orange {
+    background-color: orange;
+}
+.bg-purple {
+    background-color: rgba(128, 0, 128, 0.881);
+}
+/* section apply */
+#apply>div>div {
+    height: 500px;
+}
+.bg-apply {
+    background-image: url('https://demo.themexpert.com/wordpress/edumodo/university-v1/wp-content/uploads/sites/9/2021/08/about-img-6.jpg');
+    height: 90%;
+}
+.bg-setting {
+    background-size: cover;
+    background-position: center;
+}
+
+/* numbers div */
+#numbers {
+    height: 200px;
+    background-color: darkblue;
+}
+#numbers>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 3rem;
+}
+/* ipad */
+@media screen and (min-width:768px) {
+    .frame-for-4-div {
+        width: 96%;
+        margin: 0 auto;
+        position: relative;
+        top: -100px;
+    }
+    
+}
+
+/* laptop */
+@media screen and (min-width:1200px) {
+    nav {
+        max-width: 1000px;
+    }
+    #holder{
+        position: relative;
+    }
+    .uni-pic {
+        height: 100vh;
+        padding-bottom: 250px;
+    }
+    .frame-for-4-div {
+        position: absolute;
+        width: 1000px;
+        top: auto;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .frame {
+        height: 400px;
+    }
+}
+
+
