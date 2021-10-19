@@ -1,0 +1,21 @@
+/* navbar */
+.nav-link {
+    font-size: larger;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+nav {
+    height: 70px;
+}
+.navbar-brand img {
+    height: 50px;
+    position: absolute;
+    top: 10px;
+}
+
+main {
+    height: 80vh;
+    background-image: url('dog-man.jpeg');
+    background-size: cover;
+    background-position: center;
+}

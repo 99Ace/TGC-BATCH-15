@@ -1,0 +1,29 @@
+/* set up a div for a height of 50 view-height */
+.h-50 {
+    height: 50vh;
+}
+/* set up a div for a height of 100 view-height */
+.h-100 {
+    height: 70vh;   
+}
+/* set up for background image 1 */
+.bg-img1 {
+    background-image: url('https://aldf.org/wp-content/uploads/2018/05/lamb-iStock-665494268-16x9-e1559777676675.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+/* set up for background image 2 */
+.bg-img2 {
+    background-image: url('https://navs.org/wp-content/uploads/bb-plugin/cache/bunny-landscape.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   
+}
+/* set up for background image 3 */
+.bg-img3 {
+    background-image: url('http://4.bp.blogspot.com/--cBQkg6lqUA/Va4IM4AzQ1I/AAAAAAAAbTI/X6xIYJED1c4/s1600/2407_A-pair-of-cute-fluffy-bunnies.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   
+}

@@ -1,0 +1,41 @@
+/* navbar */
+.nav-link {
+    font-size: larger;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 3.2;
+}
+.navbar-brand img {
+    height: 50px;
+}
+
+/* to make navbar on top of main */
+nav {
+    height: 70px;
+    position: absolute !important;
+    width: 100%;
+    top: 0;
+}
+
+main {
+    height: 80vh;
+    /* replace the image link in url with own image */
+    background-image: url('dog-man.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.overlay {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.33);
+}
+/* this is to simulate a div so we can do scrolling */
+.h-200 {
+    height: 200vh;
+}
+
+
+@media screen and (min-width: 992px) {
+    nav {
+        padding-top: 100px !important;
+    }
+}
